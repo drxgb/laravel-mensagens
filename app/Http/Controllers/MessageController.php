@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Message;
-use App\Http\Requests\StoreMessageRequest;
-use App\Http\Requests\UpdateMessageRequest;
+use App\Http\Requests\MessageRequest;
 
 class MessageController extends Controller
 {
@@ -25,10 +24,10 @@ class MessageController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreMessageRequest  $request
+     * @param  \App\Http\Requests\StoreRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreMessageRequest $request)
+    public function store(MessageRequest $request)
     {
 		Message::create([
 			'title' => $request->title,
@@ -61,19 +60,29 @@ class MessageController extends Controller
      */
     public function edit(Message $message)
     {
-        //
+        return view('app.message.edit', [
+			'message' => $message
+		]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateMessageRequest  $request
+     * @param  \App\Http\Requests\MessageRequest  $request
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMessageRequest $request, Message $message)
+    public function update(MessageRequest $request, Message $message)
     {
-        //
+        Message::where('id', $message->id)
+			->update([
+				'title' => $request->title,
+				'content' => $request->content
+		]);
+
+		return redirect()->route('message.index')->with([
+			'success' => "A mensagem $request->title foi modificada com sucesso!",
+		]);
     }
 
     /**

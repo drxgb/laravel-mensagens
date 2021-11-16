@@ -6185,7 +6185,7 @@ footer > p {
 .btn {
   border: solid 2px #e9d8a6;
   border-radius: 10px;
-  padding: 10px 24px;
+  padding: 10px;
   font-size: 12pt;
   transition: 0.25s;
 }
@@ -6198,6 +6198,16 @@ footer > p {
 .btn-primary {
   background-color: #0a9396;
   color: #94d2bd;
+}
+
+.btn-warning {
+  background-color: #ee9b00;
+  color: #e9d8a6;
+}
+
+.btn-danger {
+  background-color: #ae2012;
+  color: #e9d8a6;
 }
 
 .form-container {
@@ -6285,4 +6295,15 @@ footer > p {
 
 .message-title {
   margin-bottom: 5px;
+}
+
+.message-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-actions {
+  display: inline-block;
 }

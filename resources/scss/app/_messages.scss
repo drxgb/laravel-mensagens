@@ -23,3 +23,14 @@
 .message-title {
 	margin-bottom: 5px;
 }
+
+.message-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.message-actions {
+	display: inline-block;
+}
