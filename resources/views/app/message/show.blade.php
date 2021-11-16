@@ -2,12 +2,6 @@
 
 @section('content')
 	<section class="messages-container">
-		<div class="message">
-			<h1>{{ $message->title }}</h1>
-			<span class="message-date">
-				<em>{{ $message->created_at }}</em>
-			</span>
-			<p>{{ $message->content }}</p>
-		</div>
+		<x-message.card :message="$message" />
 	</section>
 @endsection
