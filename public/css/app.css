@@ -7,6 +7,11 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 header {
   background-color: #bb3e03;
   padding: 20px 40px;

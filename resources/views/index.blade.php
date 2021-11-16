@@ -9,7 +9,9 @@
 </head>
 <body>
     @include('layouts.header')
-    @section('content')
-    @show
+    <div class="container">
+        @section('content')
+        @show
+    </div>
 </body>
 </html>
