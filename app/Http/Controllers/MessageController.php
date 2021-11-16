@@ -15,8 +15,10 @@ class MessageController extends Controller
      */
     public function index()
     {
+		$messages = Message::all()->sortByDesc('created_at');
+
         return view('app.message.index', [
-			'messages' => Message::all()
+			'messages' => $messages,
 		]);
     }
 
@@ -49,7 +51,9 @@ class MessageController extends Controller
      */
     public function show(Message $message)
     {
-        //
+        return view('app.message.show', [
+			'message' => $message
+		]);
     }
 
     /**

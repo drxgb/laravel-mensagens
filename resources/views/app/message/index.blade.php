@@ -3,8 +3,15 @@
 @section('content')
 	<section class="messages-container">
 		@forelse ($messages as $message)
-			<h1>{{ $message->title }}</h1>
-			<p>{{ $message->content }}</p>
+			<div class="message">
+				<h1 class="message-title">
+					<a href="{{ route('message.show', $message->id) }}">{{ $message->title }}</a>
+				</h1>
+				<span class="message-date">
+					<em>{{ $message->created_at }}</em>
+				</span>
+				<p>{{ $message->content }}</p>
+			</div>
 			<hr />
 		@empty
 			<p>Não há mensagens.</p>
