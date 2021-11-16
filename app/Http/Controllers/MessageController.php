@@ -30,6 +30,11 @@ class MessageController extends Controller
      */
     public function store(StoreMessageRequest $request)
     {
+		Message::create([
+			'title' => $request->title,
+			'content' => $request->content
+		]);
+
         return redirect()->route('message.index')->with([
 			'success' => 'Sua mensagem foi enviada com sucesso!'
 		]);
