@@ -1,3 +1,7 @@
+:root {
+  height: 100%;
+}
+
 body {
   background-color: #001219;
   color: #e9d8a6;
@@ -5,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .container {
@@ -22,4 +27,22 @@ a#header-logo:visited {
   color: #e9d8a6;
   text-decoration: none;
   outline: none;
+}
+
+footer {
+  background-color: #bb3e03;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  box-sizing: content-box;
+}
+
+footer > p {
+  margin-right: 20px;
+}
+
+.heart {
+  color: red;
 }
