@@ -12,12 +12,19 @@
 
 		{{-- Ações --}}
 		@if ($link)
-			<div class="message-actions">
+			<form class="message-actions" action="{{ route('message.destroy', $message->id) }}" method="post">
 				{{-- Editar --}}
-				<a href="{{ route('message.edit', $message->id) }}" class="btn btn-warning">
+				<a href="{{ route('message.edit', $message->id) }}" class="btn btn-rounded btn-warning">
 					<i class="fas fa-edit"></i>
 				</a>
-			</div>
+
+				{{-- Deletar --}}
+				@csrf
+				@method('DELETE')
+				<button type="submit" class="btn btn-rounded btn-danger">
+					<i class="fas fa-trash"></i>
+				</button>
+			</form>
 		@endif
 	</div>
 

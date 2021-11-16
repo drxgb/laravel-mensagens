@@ -93,6 +93,9 @@ class MessageController extends Controller
      */
     public function destroy(Message $message)
     {
-        //
+        Message::destroy($message->id);
+		return redirect()->route('message.index')->with([
+			'success' => "A mensagem $message->title foi removida com sucesso!"
+		]);
     }
 }

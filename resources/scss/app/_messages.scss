@@ -34,3 +34,7 @@
 .message-actions {
 	display: inline-block;
 }
+
+.message-actions > * {
+	margin-left: 5px;
+}

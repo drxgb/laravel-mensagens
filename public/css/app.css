@@ -6190,6 +6190,10 @@ footer > p {
   transition: 0.25s;
 }
 
+.btn-rounded {
+  border-radius: 50%;
+}
+
 .btn:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
@@ -6306,4 +6310,8 @@ footer > p {
 
 .message-actions {
   display: inline-block;
+}
+
+.message-actions > * {
+  margin-left: 5px;
 }
