@@ -58,8 +58,8 @@ footer {
   background-color: #bb3e03;
   left: 0;
   bottom: 0;
-  position: fixed;
-  width: 100%;
+  padding: 10px 20px;
+  margin-top: 48px;
   text-align: right;
   box-sizing: content-box;
 }
