@@ -9,10 +9,10 @@
 </head>
 <body>
     @include('layouts.header')
-    <div class="container">
+    <main class="container">
         @section('content')
         @show
-    </div>
+    </main>
     @include('layouts.footer')
 </body>
 </html>
