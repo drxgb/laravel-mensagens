@@ -18,4 +18,4 @@ Route::get('/', function () {
     return redirect()->route('message.index');
 })->name('index');
 
-Route::resource('message', MessageController::class);
+Route::resource('message', MessageController::class)->except('create');
