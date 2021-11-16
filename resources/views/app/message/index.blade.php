@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('index')
 
 @section('content')
 	<h1>Mensagens</h1>
