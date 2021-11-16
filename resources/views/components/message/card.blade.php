@@ -1,3 +1,5 @@
+@inject('time', 'App\Services\TimeService')
+
 <div class="message">
 	{{-- Cabeçalho --}}
 	<div class="message-header">
@@ -31,7 +33,7 @@
 	{{-- Data de criação --}}
 	<span class="message-date">
 		<i class="far fa-clock"></i>
-		<em>{{ $message->created_at }}</em>
+		<em>{{ $time->toMomentsAgo($message->created_at) }}</em>
 	</span>
 
 	{{-- Conteúdo da mensagem --}}
