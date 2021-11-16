@@ -1,6 +1,7 @@
 @extends('index')
 
 @section('content')
+	<x-message.form title="Escreva uma mensagem..." />
 	<section class="messages-container">
 		@forelse ($messages as $message)
 			<div class="message">

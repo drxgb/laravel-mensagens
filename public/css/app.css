@@ -74,6 +74,60 @@ footer > p {
   color: red;
 }
 
+.btn {
+  border: solid 2px #e9d8a6;
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-size: 12pt;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-primary {
+  background-color: #0a9396;
+  color: #94d2bd;
+}
+
+.form-container {
+  margin-bottom: 48px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > input[type=text],
+.input-container > textarea {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #e9d8a6;
+  border: solid 2px #e9d8a6;
+  border-radius: 20px;
+}
+
+.input-container > input[type=text] {
+  font-size: 14pt;
+}
+
+.input-container > textarea {
+  font-family: inherit;
+  font-size: 12pt;
+  resize: vertical;
+  min-height: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .messages-container {
   border: solid 2px #e9d8a6;
   border-radius: 10px;

@@ -40,7 +40,7 @@ class MessageController extends Controller
      */
     public function store(StoreMessageRequest $request)
     {
-        //
+        return 'POST';
     }
 
     /**
