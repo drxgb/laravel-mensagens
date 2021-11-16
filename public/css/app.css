@@ -1,5 +1,20 @@
 body {
-  background-color: #222;
-  color: #fff;
+  background-color: #001219;
+  color: #e9d8a6;
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #bb3e03;
+  padding: 20px 40px;
+}
+
+a#header-logo,
+a#header-logo:visited {
+  color: #e9d8a6;
+  text-decoration: none;
+  outline: none;
 }

@@ -8,6 +8,7 @@
     <title>{{ env('APP_NAME') }}</title>
 </head>
 <body>
+    @include('layouts.header')
     @section('content')
     @show
 </body>

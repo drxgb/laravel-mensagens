@@ -1,0 +1,11 @@
+header {
+    background-color: $header-bg-color;
+    padding: 20px 40px;
+}
+
+a#header-logo,
+a#header-logo:visited {
+    color: $text-color;
+    text-decoration: none;
+    outline: none;
+}

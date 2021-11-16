@@ -15,7 +15,7 @@ use App\Http\Controllers\MessageController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return redirect()->route('message.index');
+})->name('index');
 
 Route::resource('message', MessageController::class);
