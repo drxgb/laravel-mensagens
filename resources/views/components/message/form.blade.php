@@ -25,6 +25,7 @@
 		</div>
 		<div class="button-container">
 			<button type="submit" class="btn btn-primary">
+				<i class="fas fa-paper-plane"></i>
 				@if ($method == "PUT")
 					Modificar
 				@else
