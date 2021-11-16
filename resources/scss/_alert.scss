@@ -1,0 +1,24 @@
+.alert {
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: solid 2px;
+	transition: 0.5s;
+	margin-bottom: 10px;
+	color: $text-color;
+}
+
+.alert-success {
+	background-color: $success;
+	border-color: $success-border;
+	color: $success-border;
+}
+
+.alert-warning {
+	background-color: $warning;
+	border-color: $warning-border;
+}
+
+.alert-danger {
+	background-color: $danger;
+	border-color: $danger-border;
+}

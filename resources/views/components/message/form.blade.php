@@ -1,6 +1,6 @@
 <section class="form-container">
 	@if (session('success'))
-		<span class="text-primary">{{ session('success') }}</span>
+		<x-alert type="success" :message="session('success')" />
 	@endif
 
 	@isset($title)
@@ -15,12 +15,12 @@
 		<div class="input-container">
 			<input type="text" name="title" id="title" placeholder="Título da Mensagem..." />
 			@error('title')
-				<span class="text-danger">{{ $message }}</span>
+				<x-alert type="danger" :message="$message" />
 			@enderror
 
 			<textarea name="content" id="content" cols="30" rows="5" placeholder="Escreva sua mensagem aqui."></textarea>
 			@error('content')
-				<span class="text-danger">{{ $message }}</span>
+				<x-alert type="danger" :message="$message" />
 			@enderror
 		</div>
 		<div class="button-container">
